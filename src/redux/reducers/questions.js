@@ -145,7 +145,6 @@ export const fetchNewQuiz = (duration: duration, difficulty: difficulty) => (
       difficulty,
     },
   });
-
   dispatch({
     types: [
       QUESTION_FETCH_IN_PROGRESS,
@@ -155,22 +154,24 @@ export const fetchNewQuiz = (duration: duration, difficulty: difficulty) => (
     promise: () =>
       axios({
         method: 'GET',
-        url: `http://${process.env.REACT_APP_API_HOST}:${
+        url: `${process.env.REACT_APP_API_HOST}:${
           process.env.REACT_APP_API_PORT
         }/api.php`,
         headers: {
           'content-type': 'application/json',
         },
         params: {
-          amount: durationParamMapper(duration),
-          difficulty: difficultyParamMapper(difficulty),
+          amount: durationParamMapper(quizDuration),
+          difficulty: difficultyParamMapper(difficultyLevel),
           type: 'boolean',
         },
       })
         .then(res => {
-          console.log(res.data);
           return { questions: res.data.results };
         })
-        .catch(networkErrorHandler),
+        .catch(e => {
+          console.log(e);
+          return e;
+        }),
   });
 };
