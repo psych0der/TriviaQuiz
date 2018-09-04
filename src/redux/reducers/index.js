@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux';
-import devices from './devices';
+import questions from './questions';
 export default combineReducers({
-  devices,
+  questions,
 });
