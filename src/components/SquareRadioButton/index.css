@@ -1,0 +1,31 @@
+.SquareRadioButtonContainer {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.squareRadioButton {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+}
+
+.SquareRadioButtonContainer {
+    display: inline-block;
+}
+
+.squareRadioButton+label {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    background-color: #454545;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 3px;
+    transition: all 0.3s ease-out;
+    font-family: sans-serif;
+}
+
+.squareRadioButton:checked+label {
+    background-color: #58ba83;
+}

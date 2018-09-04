@@ -1,0 +1,21 @@
+.container {
+    background: #fff;
+    color: #444;
+    max-width: 65%;
+    margin: 40px auto;
+    padding: 20px 25px;
+}
+
+.section {
+    margin-top: 50px;
+}
+
+.sectionHeading {
+    font-size: 1.1rem;
+}
+
+@media(max-width: 480px) {
+    .container {
+        max-width: 460px;
+    }
+}
