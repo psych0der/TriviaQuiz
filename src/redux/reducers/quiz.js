@@ -46,19 +46,18 @@ export default (state: State = initialState, action: Action) => {
  * Action creator to save answer for the current question and increment current question index
  * @param {boolean} answer
  */
-export const saveAnswer = (answer:boolean) =>(
-  dispatch: Dispatch
-) => {
+export const saveAnswer = (answer: boolean) => (dispatch: Dispatch) => {
   /* save answer for the current question */
   dispatch({
     type: SAVE_ANSWER,
     answerObject: {
       answer,
-      answerTime: new Date()
-    }
+      answerTime: new Date(),
+    },
   });
 
   /* increment current question marker */
   dispatch({
-    type: PROCEED_TO_NEXT_QUESTION
-  })
+    type: PROCEED_TO_NEXT_QUESTION,
+  });
+};
