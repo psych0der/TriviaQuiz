@@ -5,6 +5,13 @@ exports[`Questionpage: default 1`] = `
   className={undefined}
 >
   edit me: at src/components/QuestionPage/index.js
+  <div>
+    <div
+      className={undefined}
+    >
+      edit me: at src/components/QuestionBox/index.js
+    </div>
+  </div>
   <div
     className={undefined}
   >

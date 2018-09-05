@@ -15,7 +15,6 @@
 
 .NavigationContainer div {
   display: inline-block;
-  /* margin-right: 40px; */
   border-radius: 100%;
   border: thin solid transparent;
   width: 50px;
@@ -26,8 +25,21 @@
   cursor: pointer;
 }
 
-.right {
-  margin-left: 65px;
+.NavigationContainer div:nth-child(1) {
+  margin-right: 65px;
+}
+
+.questionNumberIdentifier {
+  text-align: center;
+  margin: 20px 0px;
+}
+
+.previousQuestionWarning {
+  margin: 16px 0px;
+  color: #ccc;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-align: center;
 }
 
 .NavigationContainer div.disabledNav {
