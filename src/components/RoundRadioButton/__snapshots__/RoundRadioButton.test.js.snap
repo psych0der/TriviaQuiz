@@ -15,7 +15,7 @@ exports[`RoundRadioButton: default 1`] = `
   />
   <label
     className={undefined}
-    for="id-0"
+    htmlFor="id-0"
   >
     Yes
   </label>
