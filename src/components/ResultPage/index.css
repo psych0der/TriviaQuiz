@@ -1,0 +1,28 @@
+.ResultPage {
+  display: block;
+}
+
+.heading {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.resultAnalysis {
+  margin-top: 20px;
+}
+
+.questionText {
+  margin-left: 10px;
+  font-size: 0.96rem;
+  vertical-align: super;
+}
+
+.section {
+  margin: 10px 0px;
+  padding: 5px;
+}
+
+.restartContainer {
+  text-align: center;
+  margin-top: 20px;
+}

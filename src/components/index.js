@@ -4,3 +4,4 @@ export { default as RadioButtonGroup } from './RadioButtonGroup';
 export { default as Button } from './Button';
 export { default as QuestionPage } from './QuestionPage';
 export { default as QuestionBox } from './QuestionBox';
+export { default as ResultPage } from './ResultPage';
