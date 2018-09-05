@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders SquareRadioButtonGroup successfully 1`] = `
+<div
+  className={undefined}
+>
+  <div
+    className={undefined}
+  >
+    <input
+      className={undefined}
+      defaultChecked={false}
+      id={0}
+      name="standard-name"
+      onChange={[Function]}
+      type="radio"
+      value="1"
+    />
+    <label
+      htmlFor={0}
+    >
+      yes
+    </label>
+  </div>
+  <div
+    className={undefined}
+  >
+    <input
+      className={undefined}
+      defaultChecked={false}
+      id={1}
+      name="standard-name"
+      onChange={[Function]}
+      type="radio"
+      value="2"
+    />
+    <label
+      htmlFor={1}
+    >
+      no
+    </label>
+  </div>
+  <div
+    className={undefined}
+  >
+    <input
+      className={undefined}
+      defaultChecked={false}
+      id={2}
+      name="standard-name"
+      onChange={[Function]}
+      type="radio"
+      value="3"
+    />
+    <label
+      htmlFor={2}
+    >
+      maybe
+    </label>
+  </div>
+</div>
+`;
