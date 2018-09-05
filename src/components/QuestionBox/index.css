@@ -1,0 +1,36 @@
+.QuestionBoxContainer {
+  width: 70%;
+  margin: 10px auto;
+}
+
+.QuestionBox {
+  display: block;
+  border: thin solid black;
+  padding: 20px;
+  min-height: 100px;
+}
+
+.question {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.questionCategory {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.submitContainer {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.optionContainer {
+  margin-top: 15px;
+}
+
+@media (max-width: 480px) {
+  .QuestionBoxContainer {
+    width: 300px;
+  }
+}
