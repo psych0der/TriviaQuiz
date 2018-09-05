@@ -5,7 +5,7 @@ to: src/containers/<%= name %>/index.js
 // @flow
 import <%= comp %> from './<%= comp %>.enhanced.js';
 import <%= comp %> as <%= comp %>View  from './<%= comp %>.view.js';
-export <%= comp %>View;
+export {<%= comp %>View};
 export default <%= comp %>;
 
 

@@ -3,7 +3,7 @@ to: src/containers/<%= name %>/<%= name %>.test.js
 ---
 <% const comp = h.inflection.undasherize(name) %>import React from 'react'
 import renderer from 'react-test-renderer'
-import <%= comp %> from '.'
+import <%= comp %> from './index'
 
 it('<%= comp %>: default', () => {
   const component = renderer.create(<<%= comp %> />)
