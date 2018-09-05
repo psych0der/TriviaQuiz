@@ -1,0 +1,17 @@
+.section {
+  margin-top: 50px;
+}
+
+.sectionHeading {
+  font-size: 1.1rem;
+}
+
+.optionSection {
+  font-size: 1rem;
+  margin: 10px 0px;
+}
+
+.submitSection {
+  margin-top: 60px;
+  text-align: center;
+}

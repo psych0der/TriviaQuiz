@@ -1,0 +1,203 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Quizsettings: default 1`] = `
+<div>
+  <h3>
+    <center>
+      Welcome!
+    </center>
+  </h3>
+  <div
+    className={undefined}
+  >
+    <div
+      className={undefined}
+    >
+      How competitive you are feeling right now?
+    </div>
+    <div
+      className={undefined}
+    >
+      <div
+        className="container-fluid"
+      >
+        <div
+          className="row"
+        >
+          <div
+            className="col-xs-12 col-md-4"
+          >
+            <div
+              className={undefined}
+            >
+              <input
+                className={undefined}
+                defaultChecked={false}
+                id="diff-1"
+                name="difficulty"
+                onChange={[Function]}
+                type="radio"
+                value="EASY"
+              />
+              <label
+                htmlFor="diff-1"
+              >
+                Be easy on me
+              </label>
+            </div>
+          </div>
+          <div
+            className="col-xs-12 col-md-4"
+          >
+            <div
+              className={undefined}
+            >
+              <input
+                className={undefined}
+                defaultChecked={false}
+                id="diff-2"
+                name="difficulty"
+                onChange={[Function]}
+                type="radio"
+                value="MEDIUM"
+              />
+              <label
+                htmlFor="diff-2"
+              >
+                I may win
+              </label>
+            </div>
+          </div>
+          <div
+            className="col-xs-12 col-md-4"
+          >
+            <div
+              className={undefined}
+            >
+              <input
+                className={undefined}
+                defaultChecked={false}
+                id="diff-3"
+                name="difficulty"
+                onChange={[Function]}
+                type="radio"
+                value="HARD"
+              />
+              <label
+                htmlFor="diff-3"
+              >
+                Ask me anything
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className={undefined}
+  >
+    <div
+      className={undefined}
+    >
+      How much time you can spare?
+    </div>
+    <div
+      className={undefined}
+    >
+      <div
+        className="container-fluid"
+      >
+        <div
+          className="row"
+        >
+          <div
+            className="col-xs-12 col-md-4"
+          >
+            <div
+              className={undefined}
+            >
+              <input
+                className={undefined}
+                defaultChecked={false}
+                id="time-1"
+                name="time"
+                onChange={[Function]}
+                type="radio"
+                value="SHORT"
+              />
+              <label
+                htmlFor="time-1"
+              >
+                Be quick
+              </label>
+            </div>
+          </div>
+          <div
+            className="col-xs-12 col-md-4"
+          >
+            <div
+              className={undefined}
+            >
+              <input
+                className={undefined}
+                defaultChecked={false}
+                id="time-2"
+                name="time"
+                onChange={[Function]}
+                type="radio"
+                value="RESPECTABLE"
+              />
+              <label
+                htmlFor="time-2"
+              >
+                Till I finish my coffee
+              </label>
+            </div>
+          </div>
+          <div
+            className="col-xs-12 col-md-4"
+          >
+            <div
+              className={undefined}
+            >
+              <input
+                className={undefined}
+                defaultChecked={false}
+                id="time-3"
+                name="time"
+                onChange={[Function]}
+                type="radio"
+                value="LENGTHY"
+              />
+              <label
+                htmlFor="time-3"
+              >
+                I am all here for you
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className={undefined}
+    >
+      <button
+        className={undefined}
+        disabled={true}
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "grey",
+            "color": "#fff",
+            "cursor": "not-allowed",
+          }
+        }
+      >
+        Start
+      </button>
+    </div>
+  </div>
+</div>
+`;
