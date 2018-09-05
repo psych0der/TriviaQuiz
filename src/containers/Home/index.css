@@ -1,21 +1,24 @@
 .container {
-    background: #fff;
-    color: #444;
-    max-width: 65%;
-    margin: 40px auto;
-    padding: 20px 25px;
+  background: #fff;
+  color: #444;
+  max-width: 65%;
+  margin: 8px auto;
+  padding: 20px 25px;
 }
 
-.section {
-    margin-top: 50px;
+.buttonContainer {
+  text-align: center;
+  padding: 10px;
 }
 
-.sectionHeading {
-    font-size: 1.1rem;
+.errorMessage {
+  margin: 10px 0;
+  color: #d52714;
+  font-size: 0.9rem;
 }
 
-@media(max-width: 480px) {
-    .container {
-        max-width: 460px;
-    }
+@media (max-width: 480px) {
+  .container {
+    max-width: 460px;
+  }
 }
