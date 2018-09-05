@@ -2,7 +2,7 @@
 import React from 'react';
 
 import { QuizSettings } from '../index';
-import { Button, QuestionPage } from '../../components';
+import { Button, QuestionPage, ResultPage } from '../../components';
 import * as constants from '../../commons/constants';
 
 import { bindActionCreators } from 'redux';
@@ -86,15 +86,27 @@ export class Home extends React.Component<Props, State> {
           </div>
         )}
         {/* Display QuizPage */}
-        {this.props.questions.questionsFetched && (
-          <QuestionPage
-            questions={this.props.questions.questions}
-            submittedAnswers={this.props.quiz.answers}
-            currentQuestion={this.props.quiz.currentQuestion}
-            submitAnswer={this.props.saveAnswer}
-            abortQuiz={this.reset}
-          />
-        )}
+        {this.props.questions.questionsFetched &&
+          this.props.quiz.currentQuestion <=
+            this.props.questions.questions.length && (
+            <QuestionPage
+              questions={this.props.questions.questions}
+              submittedAnswers={this.props.quiz.answers}
+              currentQuestion={this.props.quiz.currentQuestion}
+              submitAnswer={this.props.saveAnswer}
+              abortQuiz={this.reset}
+            />
+          )}
+        {/* display result page */}
+        {this.props.questions.questionsFetched &&
+          this.props.quiz.currentQuestion >
+            this.props.questions.questions.length && (
+            <ResultPage
+              questions={this.props.questions.questions}
+              submittedAnswers={this.props.quiz.answers}
+              restart={this.reset}
+            />
+          )}
       </div>
     );
   }
