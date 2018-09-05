@@ -1,0 +1,171 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`QuestionBox: default 1`] = `
+<div
+  className={undefined}
+>
+  <div
+    className={undefined}
+  >
+    s
+  </div>
+  <div
+    className={undefined}
+  >
+    <div
+      className={undefined}
+    >
+      a
+    </div>
+    <div
+      className={undefined}
+    >
+      <div>
+        <div
+          className={undefined}
+        >
+          <input
+            className={undefined}
+            defaultChecked={null}
+            id="question-sol-true"
+            name="question-sol"
+            onChange={[Function]}
+            type="radio"
+            value={true}
+          />
+          <label
+            className={undefined}
+            htmlFor="question-sol-true"
+          >
+            True
+          </label>
+        </div>
+      </div>
+      <div>
+        <div
+          className={undefined}
+        >
+          <input
+            className={undefined}
+            defaultChecked={null}
+            id="question-sol-false"
+            name="question-sol"
+            onChange={[Function]}
+            type="radio"
+            value={false}
+          />
+          <label
+            className={undefined}
+            htmlFor="question-sol-false"
+          >
+            False
+          </label>
+        </div>
+      </div>
+      <div
+        className={undefined}
+      >
+        <button
+          className="undefined undefined"
+          disabled={true}
+          onClick={[Function]}
+          style={
+            Object {
+              "backgroundColor": "grey",
+              "color": "#fff",
+              "cursor": "not-allowed",
+            }
+          }
+        >
+          Submit
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Questionbox: default 1`] = `
+<div
+  className={undefined}
+>
+  <div
+    className={undefined}
+  >
+    s
+  </div>
+  <div
+    className={undefined}
+  >
+    <div
+      className={undefined}
+    >
+      a
+    </div>
+    <div
+      className={undefined}
+    >
+      <div>
+        <div
+          className={undefined}
+        >
+          <input
+            className={undefined}
+            defaultChecked={null}
+            id="question-sol-true"
+            name="question-sol"
+            onChange={[Function]}
+            type="radio"
+            value={true}
+          />
+          <label
+            className={undefined}
+            htmlFor="question-sol-true"
+          >
+            True
+          </label>
+        </div>
+      </div>
+      <div>
+        <div
+          className={undefined}
+        >
+          <input
+            className={undefined}
+            defaultChecked={null}
+            id="question-sol-false"
+            name="question-sol"
+            onChange={[Function]}
+            type="radio"
+            value={false}
+          />
+          <label
+            className={undefined}
+            htmlFor="question-sol-false"
+          >
+            False
+          </label>
+        </div>
+      </div>
+      <div
+        className={undefined}
+      >
+        <button
+          className="undefined undefined"
+          disabled={true}
+          onClick={[Function]}
+          style={
+            Object {
+              "backgroundColor": "grey",
+              "color": "#fff",
+              "cursor": "not-allowed",
+            }
+          }
+        >
+          Submit
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
