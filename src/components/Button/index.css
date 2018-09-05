@@ -1,0 +1,21 @@
+.Button {
+  display: block;
+  color: white;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  font-size: 0.98rem;
+  height: 65px;
+  width: 150px;
+  border: none;
+  box-shadow: 1px 1px 0px 2px rgba (0, 0, 0, 0.3);
+  cursor: pointer;
+  text-align: center;
+}
+
+.Button:focus {
+  outline: 0;
+}
+
+.slightlyRight {
+  margin-right: 2px;
+}
