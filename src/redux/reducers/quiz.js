@@ -42,6 +42,14 @@ export default (state: State = initialState, action: Action) => {
   }
 };
 
+/* Action creator to reset quiz state */
+export const resetQuiz = () => (dispatch: Dispatch) => {
+  console.log('reset quiz');
+  return dispatch({
+    type: RESET_QUIZ,
+  });
+};
+
 /**
  * Action creator to save answer for the current question and increment current question index
  * @param {boolean} answer
