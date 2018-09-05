@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@storybook/storybook-deployer": "^2.3.0",
     "autoprefixer": "7.1.6",
     "axios": "^0.18.0",
     "babel-core": "6.26.0",
@@ -76,7 +77,8 @@
     "test": "node scripts/test.js --env=jsdom",
     "precommit": "pretty-quick --staged",
     "storybook": "start-storybook -p 6006 .storybook",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "deploy-storybook": "storybook-to-ghpages"
   },
   "devDependencies": {
     "@storybook/addon-actions": "^3.4.8",

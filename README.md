@@ -1,7 +1,9 @@
 # TriviaQuiz
 
 Simple React/Redux quiz game to showcase best development practices. This game displays set of questions which are to be answered in true or false
-and presents score thereafter itself. This project
+and presents score thereafter itself.
+
+View Storybook [here](https://psych0der.github.io/TriviaQuiz/)
 
 > This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app)
 > since it provides simple and battle-tested boilerplate with many goodies built in. However, this is an ejected version
