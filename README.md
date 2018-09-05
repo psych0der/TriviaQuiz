@@ -10,15 +10,15 @@ and presents score thereafter itself. This project
 ## Highlights
 
 - CSS modules :boom:
-- Flow integration
-- Jest and Enzyme
-- Storybook support
-- Redux
-- Redux persist
-- React router
-- Hygen support
-- Pretty commits using Husky
-- Prettier and eslint support
+- Flow integration :star:
+- Jest and Enzyme :star2:
+- Storybook support :dash:
+- Redux :blue_book:
+- React router :swimmer:
+- Redux persist :bookmark:
+- Hygen support :running:
+- Pretty commits using Husky :tada:
+- Prettier and eslint support :ok_hand:
 
 ## Table of contents
 
@@ -122,43 +122,43 @@ The storybook configuration will load files with extension `.stories.js` inside 
 
 ```
 TriviaQuiz
-├── _templates
+├── _templates
 │   ├── dumb
 │   └── enhanced
 │   └── smart
-├── .storybook
+├── .storybook
 │   ├── config.js
 │   └── webpack.config.js
-├── config
+├── config
 │   ├── env.js
 │   ├── paths.js
 │   ├── polyfills.js
 │   ├── webpack.config.dev.js
 │   ├── webpack.config.prod.js
 │   └── webpackDevServer.config.js
-├── public
+├── public
 │   ├── favicon.ico
 │   ├── index.html
 │   └── manifest.json
-├── scripts
+├── scripts
 │   ├── build.js
 │   ├── start.js
 │   └── test.js
-├── src
-│   ├── components
-│   ├── containers
-│   │   ├── App
+├── src
+│   ├── components
+│   ├── containers
+│   │   ├── App
 │   │   │   ├── App.test.js
 │   │   │   └── index.js
-│   │   ├── Home
+│   │   ├── Home
 │   │   │   ├── index.css
 │   │   │   ├── index.js
 │   │   │   └── index.scss
 │   │   └── index.js
-│   ├── redux
-│   │   ├── middlewares
+│   ├── redux
+│   │   ├── middlewares
 │   │   │   └── augmentorMiddleware.js
-│   │   ├── reducers
+│   │   ├── reducers
 │   │   │   ├── index.js
 │   │   │   └── sample.js
 │   │   └── store.js
