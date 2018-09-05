@@ -1,0 +1,42 @@
+.RoundRadioButtonContainer {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.RoundRadioButton {
+  opacity: 0;
+  position: absolute;
+}
+
+.RoundRadioButtonLabel {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 5px;
+  cursor: pointer;
+  font-family: sans-serif;
+}
+
+.RoundRadioButton + .RoundRadioButtonLabel:before {
+  content: '';
+  background: #fff;
+  border: 2px solid #ddd;
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.RoundRadioButton + .RoundRadioButtonLabel:before {
+  border-radius: 50%;
+}
+
+.RoundRadioButton:checked + .RoundRadioButtonLabel:before {
+  content: '\f00c';
+  font-family: 'FontAwesome';
+  color: #fff;
+  background-color: #15e9c0;
+  border: 2px solid #15e9c0;
+}

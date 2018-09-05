@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RoundRadioButton: default 1`] = `
+<div
+  className={undefined}
+>
+  <input
+    className={undefined}
+    defaultChecked={false}
+    id="id-0"
+    name="name-round-0"
+    onChange={[Function]}
+    type="radio"
+    value="some-val"
+  />
+  <label
+    className={undefined}
+    for="id-0"
+  >
+    Yes
+  </label>
+</div>
+`;
