@@ -1,64 +1,79 @@
-## Photon
+# TriviaQuiz
 
-Sample home automation light controlling system using Resin mock API
+Simple React/Redux quiz game to showcase best development practices. This game displays set of questions which are to be answered in true or false
+and presents score thereafter itself. This project
 
 > This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app)
 > since it provides simple and battle-tested boilerplate with many goodies built in. However, this is an ejected version
 > as I wanted some features not available by default
 
-# Table of contents
+## Highlights
 
-- [Table of contents](#table-of-contents)
-    - [Usage](#usage)
-    - [Modifications done on create-react-app boilerplate](#modifications-done-on-create-react-app-boilerplate)
+- CSS modules :boom:
+- Flow integration
+- Jest and Enzyme
+- Storybook support
+- Redux
+- Redux persist
+- React router
+- Hygen support
+- Pretty commits using Husky
+- Prettier and eslint support
+
+## Table of contents
+
+- [TriviaQuiz](#triviaquiz)
+  - [Highlights](#highlights)
+  - [Table of contents](#table-of-contents)
+  - [Usage](#usage)
+  - [Modifications done on create-react-app boilerplate](#modifications-done-on-create-react-app-boilerplate)
     - [Environment variables](#environment-variables)
     - [Redux](#redux)
     - [Using Redux DevTools](#using-redux-devtools)
     - [Fetch](#fetch)
     - [Storybook](#storybook)
-    - [Project structure](#project-structure)
-    - [Application source code](#application-source-code)
-    - [Configs](#configs)
-    - [What I loved most](#what-i-loved-most)
-    - [Approach](#approach)
+  - [Project structure](#project-structure)
+  - [Application source code](#application-source-code)
+  - [Configs](#configs)
+  - [Approach](#approach)
 
 ---
 
-### [Usage](#usage)
+## [Usage](#usage)
 
 **This project uses node version 8. It is advisable to use [nvm](https://github.com/creationix/nvm). Project root contains `.nvmrc` file.**
 
-> This project requires a working mock API server which can be found [here](https://github.com/resin-io/light-api). Details of the API,
-> namely HOST and PORT should be set in `.env`. Default values are already provided in `.env.sample`
+> This project requires an API for questions. URL of a working API has been provided in `.env.sample` file.
 
 - Copy requirement file from .env.sample `cp .env.sample .env`
 - Install dependencies: `yarn install`
 - Start development server: `yarn run start`
 - Create a production build: `yarn run build`
 - Run Test cases: `yarn run test`
-- Start Storybook development server: `yarn run start-storybook`
+- Start Storybook development server: `yarn run storybook`
 - Build Storybook: `yarn run build-storybook`
 
 ---
 
-### [Modifications done on create-react-app boilerplate](#modifications)
+## [Modifications done on create-react-app boilerplate](#modifications)
 
 - Added support for CSS-modules. This avoids the major headache of maintaining distinct class names across all the components
-- Used Scss instead of CSS, as I feel using a superset of CSS will increase my developer productivity. All the SCSS files are compiled to CSS files only. So in the source code, only CSS files are imported.
-
   - This decision allows other developers to switch to CSS if they like and the code will look same
-
+- Separate configuration for global css from node_modules which disables css-modules for these files
+- Added [storybook](https://storybook.js.org/) for making UI testing and showcase a breeze
 - Add [Flow](https://flow.org/) type checking. This allows writing code more confidently.
 - Add [Prettier](https://github.com/prettier/prettier) code formatting. I am using VSCode and there's an excellent plugin for prettier that formats code on save
 - I have also added a git pre-commit hook using [Husky](https://github.com/typicode/husky) that formats the code before committing it. So that you don't have to use VSCode to get automatic code formatting ;)
 - I have added [Redux](https://redux.js.org/) for simple state management. This will also help in standardizing error handling for remote calls. I'll explain this another section.
 - Use [React router](https://github.com/ReactTraining/react-router) for declarative routing. Although, we have a single page right now. But why not use a standardized way of creating route paths?
+- I added [redux persist](https://github.com/rt2zz/redux-persist) for persisting redux state in localstroage. This allows game to resume from last point on browser restarts aswell.
+- I have integrated [Hygen](http://www.hygen.io/) which helps in automating mundane task of creating predefined set of files for each component/container. This tool also makes it convenient to enfore standards such as test and storybook files.
 
 ---
 
 ### [Environment variables](#environment-variables)
 
-This project uses environment variables for configurations like HTTP endpoint of the light bulb API. This allows the code to be decoupled from the configuration and configurables to be frozen at build time.
+This project uses environment variables for configurations like HTTP endpoint of the questions API. This allows the code to be decoupled from the configuration and configurables to be frozen at build time.
 At the build time, this project looks for the .env file in the project root directory. This setup was done by create-react-app automatically while setting up this project. [Look here](https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#adding-custom-environment-variables) for more info.
 This project contains _.env.sample_ file to describe environment variables required by project. **Don't add any confidential values in this sample file. Original .env file is not checked in git for security reasons.**
 
@@ -103,10 +118,14 @@ The storybook configuration will load files with extension `.stories.js` inside 
 
 ---
 
-### [Project structure](#project-structure)
+## [Project structure](#project-structure)
 
 ```
-resin-photon
+TriviaQuiz
+├── _templates
+│   ├── dumb
+│   └── enhanced
+│   └── smart
 ├── .storybook
 │   ├── config.js
 │   └── webpack.config.js
@@ -157,7 +176,7 @@ resin-photon
 └── yarn.lock
 ```
 
-### [Application source code](#aps)
+## [Application source code](#aps)
 
 - All of the application source resides inside `src` directory.
 - All Redux related code is inside `src/redux`
@@ -167,19 +186,13 @@ resin-photon
 - All the static assets used by components/containers should be contained inside their respective directories. This is done to isolate their assets and dependencies
 - Each component/container should contain their .story.js and .test.js files inside their directories
 
-### [Configs](#configs)
+## [Configs](#configs)
 
 ALl webpack related configs, and polyfills reside inside `config` directory
 
 ---
 
-### [What I loved most](#What-I-loved-most)
-
-- I loved building Radial slider, as I got to brushen up my geometry and SVG skills. I spent considerable time on that part
-  but it was worth it
-- I loved building redux integration and data shape. It is optimized for frequent data edits.
-
-### [Approach](#approach)
+## [Approach](#approach)
 
 I have started building this project by setting a sane development environment that will allow faster iterations, easy updates and better maintainability.
 
