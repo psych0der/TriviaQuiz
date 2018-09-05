@@ -13,6 +13,7 @@
  */
 
 import * as constants from '../../commons/constants';
+import { networkErrorHandler } from '../../commons/helpers';
 import axios from 'axios';
 
 export const QUESTION_FETCH_IN_PROGRESS =
@@ -106,6 +107,7 @@ export default (state: State = initialState, action: Action) => {
         ...state,
         fetchState: constants.FAILED,
         questions: [],
+        questionsFetched: false,
         fetchError: action.error.toString(),
       };
 
@@ -193,9 +195,6 @@ export const fetchNewQuiz = (duration: duration, difficulty: difficulty) => (
         .then(res => {
           return { questions: res.data.results };
         })
-        .catch(e => {
-          console.log(e);
-          return e;
-        }),
+        .catch(networkErrorHandler),
   });
 };

@@ -86,7 +86,8 @@ export class Home extends React.Component<Props, State> {
           </div>
         )}
         {/* Display QuizPage */}
-        {this.props.questions.questionsFetched &&
+        {this.props.questions.fetchState === constants.SUCCESS &&
+          this.props.questions.questionsFetched &&
           this.props.quiz.currentQuestion <=
             this.props.questions.questions.length && (
             <QuestionPage
@@ -98,7 +99,8 @@ export class Home extends React.Component<Props, State> {
             />
           )}
         {/* display result page */}
-        {this.props.questions.questionsFetched &&
+        {this.props.questions.fetchState === constants.SUCCESS &&
+          this.props.questions.questionsFetched &&
           this.props.quiz.currentQuestion >
             this.props.questions.questions.length && (
             <ResultPage
