@@ -1,3 +1,4 @@
+import he from 'he';
 // Network error handler for axios. Handles logout on jwt expiry
 export const networkErrorHandler = (error: object | Error) => {
   if (error.response) {
@@ -19,5 +20,5 @@ export const networkErrorHandler = (error: object | Error) => {
  * @param {string} mystring
  */
 export const fixString = (mystring: string) => {
-  return mystring.replace(/&quot;/g, '"').replace(/&#039;/g, "'");
+  return he.decode(mystring);
 };
