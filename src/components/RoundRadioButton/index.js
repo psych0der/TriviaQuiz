@@ -20,7 +20,7 @@ const RoundRadioButton = (props: Props) => (
       className={styles.RoundRadioButton}
       onChange={props.onChange}
     />
-    <label className={styles.RoundRadioButtonLabel} for={props.id}>
+    <label className={styles.RoundRadioButtonLabel} htmlFor={props.id}>
       {props.label}
     </label>
   </div>
