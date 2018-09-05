@@ -11,6 +11,7 @@ type Props = {
   disabled: ?boolean,
   color: ?string,
   backgroundColor: string,
+  small: ?boolean,
 };
 const Button = (props: Props) => (
   <button
@@ -19,7 +20,7 @@ const Button = (props: Props) => (
       color: props.color,
       cursor: props.disabled ? 'not-allowed' : 'pointer',
     }}
-    className={styles.Button}
+    className={`${styles.Button} ${props.small ? styles.smallButton : ''}`}
     disabled={props.disabled || props.isLoading}
     onClick={props.onClick}
   >
@@ -57,6 +58,7 @@ Button.defaultProps = {
   color: '#fff',
   isLoading: false,
   disabled: false,
+  small: false,
 };
 
 export default Button;
