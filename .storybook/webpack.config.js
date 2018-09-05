@@ -11,6 +11,7 @@ module.exports = {
     rules: [
       {
         test: /\.css$/,
+        exclude: /node_modules/,
         use: [
           {
             loader: 'style-loader',
@@ -23,6 +24,38 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.css$/,
+        include: /node_modules/,
+        use: [
+          {
+            loader: 'style-loader',
+          },
+          {
+            loader: 'css-loader',
+            options: {
+              modules: false,
+            },
+          },
+        ],
+      },
+      {
+        test: [
+          /\.bmp$/,
+          /\.gif$/,
+          /\.jpe?g$/,
+          /\.png$/,
+          /\.svg$/,
+          /\.eot$/,
+          /\.woff$/,
+          /\.woff2$/,
+          /\.ttf$/,
+        ],
+        loader: require.resolve('url-loader'),
+        options: {
+          limit: 10000,
+        },
+      },
     ],
   },
-}
+};
