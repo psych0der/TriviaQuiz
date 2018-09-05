@@ -4,6 +4,40 @@ exports[`Resultpage: default 1`] = `
 <div
   className={undefined}
 >
-  edit me: at src/components/ResultPage/index.js
+  <div
+    style={
+      Object {
+        "textAlign": "center",
+      }
+    }
+  >
+    <button
+      className="undefined "
+      disabled={true}
+      onClick={undefined}
+      style={
+        Object {
+          "backgroundColor": "tomato",
+          "color": "#fff",
+          "cursor": "pointer",
+        }
+      }
+    >
+      <div
+        className="css-na1r9x"
+      />
+      <span
+        style={
+          Object {
+            "marginLeft": "5px",
+            "position": "relative",
+            "top": "-5px",
+          }
+        }
+      >
+        calculating
+      </span>
+    </button>
+  </div>
 </div>
 `;

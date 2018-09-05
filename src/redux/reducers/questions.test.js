@@ -34,7 +34,11 @@ describe('Questions reducer', () => {
         result: { questions },
       })
     ).toEqual(
-      Object.assign(initialState, { questions, fetchState: 'SUCCESS' })
+      Object.assign(initialState, {
+        questions,
+        fetchState: 'SUCCESS',
+        questionsFetched: true,
+      })
     );
   });
 });

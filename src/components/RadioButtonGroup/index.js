@@ -19,6 +19,7 @@ const RadioButtonGroup = (props: Props) => {
             <SquareRadioButton
               value={value}
               id={index}
+              key={index}
               name={props.name}
               label={props.labels[index]}
               checked={props.defaultChecked === value}
@@ -30,6 +31,7 @@ const RadioButtonGroup = (props: Props) => {
             <RoundRadioButton
               value={value}
               id={index}
+              key={index}
               name={props.name}
               label={props.labels[index]}
               checked={props.defaultChecked === value}
