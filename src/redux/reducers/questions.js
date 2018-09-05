@@ -13,7 +13,6 @@
  */
 
 import * as constants from '../../commons/constants';
-import { networkErrorHandler } from '../../commons/helpers';
 import axios from 'axios';
 
 export const QUESTION_FETCH_IN_PROGRESS =

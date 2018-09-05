@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 import styles from './index.css';
 import { Button, QuestionBox } from '../index';
 import SweetAlert from 'react-bootstrap-sweetalert';
-import { IconContext } from 'react-icons';
 import { IoMdArrowRoundForward, IoMdArrowRoundBack } from 'react-icons/io';
 type Props = {
   questions: Array<{}>,

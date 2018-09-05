@@ -1,8 +1,6 @@
 // @flow
 /* Reducer to manage user's quiz state */
 
-import * as constants from '../../commons/constants';
-
 export const RESET_QUIZ = 'TriviaQuiz/RESET_QUIZ';
 export const SAVE_ANSWER = 'TriviaQuiz/SAVE_ANSWER';
 
