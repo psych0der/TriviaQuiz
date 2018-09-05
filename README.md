@@ -17,7 +17,7 @@ View Storybook [here](https://psych0der.github.io/TriviaQuiz/)
 - Storybook support :dash:
 - Redux :blue_book:
 - React router :swimmer:
-- Redux persist :bookmark:
+- Redux persist(Preserve game state across browser sessions) :bookmark:
 - Hygen support :running:
 - Pretty commits using Husky :tada:
 - Prettier and eslint support :ok_hand:
