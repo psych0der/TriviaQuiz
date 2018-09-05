@@ -2,7 +2,7 @@
 
 exports[`renders default button state 1`] = `
 <button
-  className={undefined}
+  className="undefined "
   disabled={false}
   onClick={undefined}
   style={
