@@ -19,8 +19,10 @@ import axios from 'axios';
 export const QUESTION_FETCH_IN_PROGRESS =
   'TriviaQuiz/QUESTION_FETCH_IN_PROGRESS';
 export const QUESTION_FETCH_SUCCESS = 'TriviaQuiz/QUESTION_FETCH_SUCCESS';
+export const RESET_FETCH_STATE = 'TriviaQuiz/RESET_FETCH_STATE';
 export const QUESTION_FETCH_FAILED = 'TriviaQuiz/QUESTION_FETCH_FAILED';
 export const SET_QUIZ_PREFERENCES = 'TriviaQuiz/SET_QUIZ_PREFERENCES';
+export const RESET_QUESTIONS_STATE = 'TriviaQuiz/RESET_QUESTIONS_STATE';
 
 type difficulty = constants.EASY | constants.MEDIUM | constants.HARD;
 type duration = constants.SHORT | constants.RESPECTABLE | constants.LENGTHY;
@@ -63,8 +65,8 @@ type State = {
   difficulty: difficulty,
   duration: duration,
   fetchState: string,
-  fetchError: null | Object,
-  questionsFetched: number,
+  fetchError: null | string,
+  questionsFetched: boolean,
   questions: Array<{
     type: string,
     difficulty: string,
@@ -80,7 +82,7 @@ export const initialState = {
   duration: constants.SHORT,
   fetchState: constants.IDLE,
   fetchError: null,
-  questionsFetched: 0,
+  questionsFetched: false,
   questions: [],
 };
 
@@ -96,6 +98,7 @@ export default (state: State = initialState, action: Action) => {
       return {
         ...state,
         fetchState: constants.SUCCESS,
+        questionsFetched: true,
         questions: action.result.questions,
       };
 
@@ -112,10 +115,32 @@ export default (state: State = initialState, action: Action) => {
         ...state,
         ...action.preferences,
       };
+    case RESET_FETCH_STATE:
+      return {
+        ...state,
+        fetchState: constants.IDLE,
+      };
+    case RESET_QUESTIONS_STATE:
+      return initialState;
 
     default:
       return state;
   }
+};
+
+/**
+ * Reset fetch state to idle
+ */
+export const resetFetchState = () => (dispatch: Dispatch) => {
+  return {
+    type: RESET_FETCH_STATE,
+  };
+};
+
+export const reset = () => (dispatch: Dispatch) => {
+  return dispatch({
+    type: RESET_QUESTIONS_STATE,
+  });
 };
 
 /**
