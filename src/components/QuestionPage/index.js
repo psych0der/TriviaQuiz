@@ -35,7 +35,6 @@ class QuestionPage extends Component<Props, State> {
   prevQuestion = () => {
     const questionPointer = this.state.questionPointer;
     if (questionPointer > 1) {
-      console.log('changing');
       this.setState({ questionPointer: questionPointer - 1 });
     }
   };
