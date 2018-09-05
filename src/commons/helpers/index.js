@@ -13,3 +13,11 @@ export const networkErrorHandler = (error: object | Error) => {
     throw new Error(error.message);
   }
 };
+
+/**
+ * Function to replace escape sequences back to string
+ * @param {string} mystring
+ */
+export const fixString = (mystring: string) => {
+  return mystring.replace(/&quot;/g, '"').replace(/&#039;/g, "'");
+};
