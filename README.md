@@ -1,6 +1,6 @@
 # TriviaQuiz
 
-Simple React/Redux quiz game to showcase best development practices. This game displays set of questions which are to be answered in true or false
+Simple React/Redux quiz game to demonstrate best development practices. This game displays set of questions which are to be answered in true or false
 and presents score thereafter itself.
 
 View Storybook [here](https://psych0der.github.io/TriviaQuiz/)
