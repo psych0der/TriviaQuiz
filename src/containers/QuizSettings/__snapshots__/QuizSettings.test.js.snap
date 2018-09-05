@@ -184,7 +184,7 @@ exports[`Quizsettings: default 1`] = `
       className={undefined}
     >
       <button
-        className={undefined}
+        className="undefined "
         disabled={true}
         onClick={[Function]}
         style={
