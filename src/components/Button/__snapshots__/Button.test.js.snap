@@ -1,25 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Button: default 1`] = `
-<button
-  className={undefined}
-  disabled={false}
-  style={
-    Object {
-      "backgroundColor": "tomato",
-      "color": "#fff",
-      "cursor": "pointer",
-    }
-  }
->
-  Sample button
-</button>
-`;
-
 exports[`renders default button state 1`] = `
 <button
   className={undefined}
   disabled={false}
+  onClick={undefined}
   style={
     Object {
       "backgroundColor": "tomato",

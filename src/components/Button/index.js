@@ -21,6 +21,7 @@ const Button = (props: Props) => (
     }}
     className={styles.Button}
     disabled={props.disabled || props.isLoading}
+    onClick={props.onClick}
   >
     {props.isLoading && (
       <ClipLoader
