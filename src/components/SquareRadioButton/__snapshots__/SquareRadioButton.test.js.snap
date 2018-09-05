@@ -14,7 +14,7 @@ exports[`renders Squareradiobutton correctly 1`] = `
     value="some-val"
   />
   <label
-    for="id-0"
+    htmlFor="id-0"
   >
     Yes
   </label>

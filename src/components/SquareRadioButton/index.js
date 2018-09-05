@@ -21,7 +21,7 @@ const SquareRadioButton = (props: Props) => {
         className={styles.squareRadioButton}
         onChange={props.onChange}
       />
-      <label for={props.id}>{props.label}</label>
+      <label htmlFor={props.id}>{props.label}</label>
     </div>
   );
 };
