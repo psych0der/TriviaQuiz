@@ -1,0 +1,41 @@
+.QuestionPage {
+  display: block;
+}
+
+.iconContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.NavigationContainer {
+  text-align: center;
+}
+
+.NavigationContainer div {
+  display: inline-block;
+  /* margin-right: 40px; */
+  border-radius: 100%;
+  border: thin solid transparent;
+  width: 50px;
+  height: 50px;
+  background-color: #f69023;
+  color: #fff;
+  position: relative;
+  cursor: pointer;
+}
+
+.right {
+  margin-left: 65px;
+}
+
+.NavigationContainer div.disabledNav {
+  background-color: #bbb;
+  cursor: not-allowed;
+}
+
+.abortButtonContainer {
+  margin-top: 40px;
+  text-align: center;
+}
