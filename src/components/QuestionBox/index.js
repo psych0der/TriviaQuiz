@@ -1,6 +1,7 @@
 // @flow
 import React, { Component } from 'react';
 import { RoundRadioButton, Button } from '../../components';
+import { fixString } from '../../commons/helpers';
 import styles from './index.css';
 type Props = {
   question: Object,
@@ -43,7 +44,7 @@ class QuestionBox extends Component<Props, State> {
         <div className={styles.QuestionBox}>
           <div className={styles.question}>
             {/* this is done to convert quoted chars back to normal char. Particularly for quotes */}
-            {this.props.question.question.replace(/&quot;/g, '"')}
+            {fixString(this.props.question.question)}
           </div>
           <div className={styles.optionContainer}>
             <div>
