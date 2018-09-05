@@ -1,7 +1,7 @@
 // @flow
 import React, { Component } from 'react';
 import { Grid, Row, Col } from 'react-flexbox-grid';
-import { SquareRadioButton, Button } from '../../components';
+import { RoundRadioButton, Button } from '../../components';
 import * as constants from '../../commons/constants';
 import styles from './index.css';
 type difficulty = constants.EASY | constants.MEDIUM | constants.HARD;
@@ -46,7 +46,7 @@ class QuizSettings extends Component<Props, State> {
             <Grid fluid>
               <Row>
                 <Col xs={12} md={4}>
-                  <SquareRadioButton
+                  <RoundRadioButton
                     name="difficulty"
                     id="diff-1"
                     label="Be easy on me"
@@ -55,7 +55,7 @@ class QuizSettings extends Component<Props, State> {
                   />
                 </Col>
                 <Col xs={12} md={4}>
-                  <SquareRadioButton
+                  <RoundRadioButton
                     name="difficulty"
                     id="diff-2"
                     label="I may win"
@@ -64,7 +64,7 @@ class QuizSettings extends Component<Props, State> {
                   />
                 </Col>
                 <Col xs={12} md={4}>
-                  <SquareRadioButton
+                  <RoundRadioButton
                     name="difficulty"
                     id="diff-3"
                     label="Ask me anything"
@@ -84,7 +84,7 @@ class QuizSettings extends Component<Props, State> {
             <Grid fluid>
               <Row>
                 <Col xs={12} md={4}>
-                  <SquareRadioButton
+                  <RoundRadioButton
                     name="time"
                     id="time-1"
                     label="Be quick"
@@ -93,7 +93,7 @@ class QuizSettings extends Component<Props, State> {
                   />
                 </Col>
                 <Col xs={12} md={4}>
-                  <SquareRadioButton
+                  <RoundRadioButton
                     name="time"
                     id="time-2"
                     label="Till I finish my coffee"
@@ -102,7 +102,7 @@ class QuizSettings extends Component<Props, State> {
                   />
                 </Col>
                 <Col xs={12} md={4}>
-                  <SquareRadioButton
+                  <RoundRadioButton
                     name="time"
                     id="time-3"
                     label="I am all here for you"

@@ -40,6 +40,7 @@ exports[`Quizsettings: default 1`] = `
                 value="EASY"
               />
               <label
+                className={undefined}
                 htmlFor="diff-1"
               >
                 Be easy on me
@@ -62,6 +63,7 @@ exports[`Quizsettings: default 1`] = `
                 value="MEDIUM"
               />
               <label
+                className={undefined}
                 htmlFor="diff-2"
               >
                 I may win
@@ -84,6 +86,7 @@ exports[`Quizsettings: default 1`] = `
                 value="HARD"
               />
               <label
+                className={undefined}
                 htmlFor="diff-3"
               >
                 Ask me anything
@@ -127,6 +130,7 @@ exports[`Quizsettings: default 1`] = `
                 value="SHORT"
               />
               <label
+                className={undefined}
                 htmlFor="time-1"
               >
                 Be quick
@@ -149,6 +153,7 @@ exports[`Quizsettings: default 1`] = `
                 value="RESPECTABLE"
               />
               <label
+                className={undefined}
                 htmlFor="time-2"
               >
                 Till I finish my coffee
@@ -171,6 +176,7 @@ exports[`Quizsettings: default 1`] = `
                 value="LENGTHY"
               />
               <label
+                className={undefined}
                 htmlFor="time-3"
               >
                 I am all here for you
