@@ -1,5 +1,7 @@
 # TriviaQuiz
 
+[![Build Status](https://travis-ci.org/psych0der/TriviaQuiz.svg?branch=master)](https://travis-ci.org/psych0der/TriviaQuiz)
+
 Simple React/Redux quiz game to demonstrate best development practices. This game displays set of questions which are to be answered in true or false
 and presents score thereafter itself.
 
