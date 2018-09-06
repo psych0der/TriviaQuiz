@@ -137,7 +137,7 @@ class QuestionPage extends Component<Props, State> {
           onConfirm={this.props.abortQuiz}
           onCancel={this.cancelAbort}
         >
-          You will not be able to recover this imaginary file!
+          Your progress will be lost and you won't be able to view your result
         </SweetAlert>
       </div>
     );
