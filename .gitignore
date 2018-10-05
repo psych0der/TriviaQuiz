@@ -25,3 +25,6 @@ yarn-error.log*
 # ignore .env file
 .env
 README-orig.md
+
+#ignore storybook static folder
+storybook-static
