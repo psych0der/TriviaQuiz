@@ -2,7 +2,7 @@
 framework: jest
 postMerge: 
   pattern: 
-    - ./src/**/*.test.js
+    - src/**/*.test.js
 postRun: 
   command: 
     - "node --version"
@@ -10,8 +10,8 @@ postRun:
     BABEL_ENV: test
 preMerge: 
   pattern: 
-    - ./src/**/*.test.js
+    - src/**/*.test.js
 preRun: 
   command: 
-    - "npm ci"
+    - "npm install"
 
