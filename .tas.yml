@@ -8,7 +8,7 @@ postRun:
     - "node --version"
   env:
     BABEL_ENV: test
-    PUBLIC_URL: ''
+    PUBLIC_URL: ""
 preMerge: 
   pattern: 
     - ./src/**/*.test.js
