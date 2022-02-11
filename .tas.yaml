@@ -15,4 +15,4 @@ preMerge:
 preRun: 
   command: 
     - "npm ci"
-version: 1.0
+
