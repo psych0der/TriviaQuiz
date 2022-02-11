@@ -13,5 +13,6 @@ preMerge:
     - src/**/*.test.js
 preRun: 
   command: 
-    - "npm install"
+    - yarn install
+    - yarn run build
 
