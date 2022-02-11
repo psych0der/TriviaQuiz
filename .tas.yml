@@ -11,6 +11,7 @@ postRun:
 preMerge: 
   pattern: 
     - src/**/*.test.js
+nodeVersion: 8.0.0
 preRun: 
   command: 
     - yarn install

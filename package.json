@@ -98,5 +98,8 @@
     "presets": [
       "react-app"
     ]
+  },
+  "engines": {
+    "node": ">=8 <9"
   }
 }
